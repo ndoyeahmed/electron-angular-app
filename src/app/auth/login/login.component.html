@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="container-fluid">
+    <mat-card style="margin-top: 20%">
+      <mat-card-header>
+        Login
+      </mat-card-header>
+
+      <mat-card-content>
+
+        <form #login="ngForm" class="form-group">
+          <div class="form-group row">
+            <mat-form-field color="primary">
+              <mat-label>Login</mat-label>
+              <input name="login" matInput [(ngModel)]="utilisateur.username" required />
+            </mat-form-field>
+          </div>
+
+          <div class="form-group row">
+            <mat-form-field color="primary">
+              <mat-label>Password</mat-label>
+              <input name="password" matInput type="password" [(ngModel)]="utilisateur.password" required/>
+            </mat-form-field>
+          </div>
+
+          <div class="form-group row">
+            <a mat-raised-button class="btn" color="primary" [disabled]="!login.valid" (click)="save()">
+              connexion
+            </a>
+          </div>
+        </form>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
