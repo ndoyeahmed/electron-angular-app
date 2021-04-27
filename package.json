@@ -55,7 +55,7 @@
     "ngx-cookie-service": "^1.0.10",
     "os": "^0.1.1",
     "popper": "^1.0.1",
-    "redis": "^2.8.0",
+    "redis": "^3.1.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "~6.4.0",
     "tls": "0.0.1",
